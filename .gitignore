@@ -1,4 +1,6 @@
 # DS Store
 .DS_Store
+# MYSQL
+life/mysql/*
 
 *.zip
