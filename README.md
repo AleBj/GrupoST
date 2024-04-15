@@ -1,7 +1,8 @@
 # GRUPO ST
-# /Life
+
+# cd life
 # Iniciar Contenedores
-docker-compose up -d       
+docker-compose up -d 
 # Ver contenedores
 docker ps
 
