@@ -1,6 +1,7 @@
 # GRUPO ST
 
-# cd life
+# Carpeta del proyecto
+cd life
 # Iniciar Contenedores
 docker-compose up -d 
 # Ver contenedores
