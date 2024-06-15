@@ -1,0 +1,61 @@
+{
+	"name": "web",
+	"private": true,
+	"version": "1.0.6",
+	"description": "",
+	"scripts": {
+		"dev": "mix",
+		"start": "mix watch",
+		"watch-poll": "mix watch -- --watch-options-poll=1000",
+		"hot": "mix watch --hot",
+		"build": "mix --production"
+	},
+	"browserslist": {
+		"modern": [
+			"last 2 versions",
+			">= 1%",
+			"Firefox ESR",
+			"safari >= 12",
+			"not ie >= 10",
+			"not ie_mob >= 10"
+		],
+		"with-ie": [
+			"last 2 versions",
+			">= 1%",
+			"Firefox ESR",
+			"safari >= 12"
+		]
+	},
+	"dependencies": {
+		"@dogstudio/highway": "^2.2.1",
+		"@studio-freight/lenis": "^0.2.28",
+		"@unseenco/e": "^1.10.1",
+		"autoprefixer": "^10.3.6",
+		"axios": "^1.7.2",
+		"browser-sync": "^3.0.2",
+		"browser-sync-webpack-plugin": "^2.3.0",
+		"clean-webpack-plugin": "^4.0.0",
+		"copy-webpack-plugin": "^9.0.1",
+		"embla-carousel": "^7.0.9",
+		"fast-glob": "^3.2.11",
+		"font-awesome": "^4.7.0",
+		"gsap": "file:gsap-bonus.tgz",
+		"jquery": "^3.6.0",
+		"laravel-mix": "^6.0.31",
+		"laravel-mix-copy-watched": "^2.3.1",
+		"laravel-mix-nunjucks": "^1.1.0",
+		"lil-gui": "^0.17.0",
+		"node-sass": "^9.0.0",
+		"postcss": "^8.3.8",
+		"raw-loader": "^4.0.2",
+		"sass": "^1.42.1",
+		"sass-loader": "^14.2.1",
+		"stats.js": "^0.17.0",
+		"swiper": "^6.8.4",
+		"tailwindcss": "^2.2.16",
+		"three": "^0.148.0"
+	},
+	"devDependencies": {
+		"@types/node": "^12.20.55"
+	}
+}

@@ -1,0 +1,65 @@
+@import 'fonts';
+@import 'default';
+@import 'menu';
+@import 'header';
+@import 'footer';
+@import './components/titles';
+//PAGES
+@import './pages/home';
+
+:root{
+    --size: 375;
+}
+
+@media (min-width: 650px) {
+    :root{
+        --size: 1440;
+    }
+}
+
+@mixin fluid($properties, $value) {
+    @each $property in $properties {
+        #{$property}: clamp(5px, 10px, calc(#{$value} * (100vw / var(--size))));
+    }
+}
+
+html{
+    @include fluid(font-size, 10);
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html, body{
+    width: 100%;
+    font-family: $font-text;
+    margin:0;padding: 0;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    outline: none;
+    font-weight: 400;
+}
+strong{font-weight: 700;}
+a{font:inherit;text-decoration: none;color: inherit;}
+body{
+    line-height: 1.6;
+    &.is-loading{
+        //cursor: wait;
+    }
+}
+a, button{
+
+    &.is-active{
+        pointer-events: none;
+    }
+}
+[data-router-view] {
+    position: relative;
+    width: 100%;
+}
+
+

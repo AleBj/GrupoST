@@ -1,0 +1,224 @@
+#overview {
+  overflow: hidden;
+  height: 100vh;
+  .page_title {
+    position: fixed;
+    top: 5rem;
+    left: 25rem;
+    transition: 0.5s;
+    display: block;
+    z-index: 10000;
+
+    @media (max-width: 992px) {
+      top: 3.75rem;
+      left: 14rem;
+    }
+
+    @media (max-width: 650px) {
+      display: none;
+    }
+  }
+  #contentGrid {
+    min-height: 100vh;
+  }
+  .grid-container {
+    user-select: none;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+    @media (max-width: 990px) {
+      overflow-y: scroll;
+      padding: 100px 20px 0;
+    }
+  }
+
+  .grid-container:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+  }
+
+  .card {
+    // border: 1px solid white;
+    transition: opacity 1.6s;
+    opacity: 1;
+    overflow: hidden;
+    position: absolute;
+    width: 700px;
+    height: 450px;
+    @media screen and (max-width: 768px) {
+      position: relative;
+    }
+    .overlap {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      pointer-events: none;
+      @media screen and (max-width: 768px) {
+        pointer-events: auto;
+      }
+    }
+    &_title {
+      position: absolute;
+      right: 0;
+      bottom: 0px;
+      transition: ease-in 0.5s;
+      z-index: 1;
+      label,
+      h2,
+      a {
+        opacity: 0;
+        transition: 0.3s;
+      }
+      h2 {
+        margin: 5px 0 20px;
+        pointer-events: none;
+      }
+      label {
+        pointer-events: none;
+      }
+    }
+    img {
+      position: absolute;
+      pointer-events: none;
+      user-select: none;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      filter: grayscale(95%);
+      transition: cubic-bezier(0.61, 0.22, 0.48, 0.96) 0.4s;
+    }
+    &:nth-child(even) {
+      img {
+        transform: translate(100px, 60px) scale(0.7);
+      }
+    }
+    &:nth-child(odd) {
+      img {
+        transform: translate(0px, 30px) scale(0.6);
+      }
+    }
+    & > .card_title {
+      height: 140px;
+      pointer-events: none;
+      a,
+      label,
+      h2 {
+        // transform: translateX(0px) translateY(50px);
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+        bottom: 0 !important;
+      }
+    }
+    @media (min-width: 990px) {
+      &:hover {
+        & > img {
+          transform: translate(0, 0) scale(0.9);
+          transform-origin: center;
+          filter: grayscale(0%) brightness(50%);
+        }
+        & > .card_title {
+          transform: translateY(-50px);
+          a,
+          label,
+          h2 {
+            opacity: 1;
+            transform: translateX(0px) translateY(30px);
+          }
+          label {
+            transition-delay: 0.4s;
+          }
+          h2 {
+            transition-delay: 0.5s;
+          }
+          a {
+            transition-delay: 0.3s;
+          }
+        }
+
+        & > .primary-button {
+          & > i {
+            margin-right: 10px;
+          }
+          & > span {
+            background-color: rgba($color: $green, $alpha: 0.9);
+          }
+        }
+        .overlap {
+          pointer-events: all;
+        }
+      }
+    }
+    @media (max-width: 990px) {
+      // position: static;
+      width: 100%;
+      height: auto;
+      margin-bottom: 40px;
+      &:nth-child(odd) img,
+      &:nth-child(even) img {
+        transform: none;
+      }
+      & img {
+        position: static;
+        width: 80%;
+        height: auto;
+        object-fit: cover;
+        aspect-ratio: 16/10;
+        filter: none;
+      }
+      &_title {
+        display: block;
+        position: static;
+        width: 100%;
+        height: auto !important;
+        // transform: translateY(-10px);
+        a,
+        label,
+        h2 {
+          opacity: 1;
+          transform: translateX(0px) translateY(0px) !important;
+        }
+        h2 {
+          font-size: 4rem;
+          line-height: 1.15;
+          margin-bottom: 5px;
+        }
+      }
+      &:nth-child(odd) {
+        img,
+        .card_title {
+          margin-left: 20%;
+        }
+      }
+    }
+  }
+
+  .card.hidden {
+    opacity: 0;
+  }
+  .primary-button {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    z-index: 100;
+    left: 0;
+    margin: 0 auto;
+    pointer-events: none;
+    @media (max-width: 990px) {
+      position: static;
+    }
+  }
+  @media (max-width: 990px) {
+    .drag-to-explore {
+      display: none;
+    }
+  }
+}

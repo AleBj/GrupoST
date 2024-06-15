@@ -1,0 +1,168 @@
+#contact {
+  .header {
+    display: flex;
+    gap: 100px;
+  }
+  .hero {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 25vh;
+    width: calc(100% - 350px);
+    min-width: 1080px;
+    h1 {
+      max-width: 821px;
+      position: relative;
+      z-index: 1;
+      line-height: 1.05;
+    }
+    p {
+      margin-top: 50px;
+      font-size: 15px;
+    }
+    .textCircle {
+      position: absolute;
+    }
+    &__left {
+      justify-content: space-between;
+      flex-direction: column;
+      height: 380px;
+      width: 50%;
+    }
+    &__right {
+      width: 780px;
+      max-width: 100%;
+    }
+  }
+  p.paragraph {
+    font-size: 2.4rem;
+    line-height: 1.66;
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+  .flexblock {
+    display: flex;
+    .col {
+      width: 50%;
+    }
+    form {
+      width: 100%;
+      max-width: 450px;
+      padding: 30px 14px;
+    }
+    input,
+    textarea {
+      appearance: none;
+      display: block;
+      font-family: $font-text;
+      font-style: italic;
+      color: white;
+      background: transparent;
+      resize: none;
+      outline: none;
+      width: 100%;
+      border: none;
+      font-size: 3rem;
+      height: 66px;
+      border-bottom: 1px solid white;
+      margin-bottom: 24px;
+      transition: 0.3s;
+      &::placeholder {
+        font-size: 5.4rem;
+        color: white;
+      }
+      &:focus {
+        border-bottom: 1px solid $green;
+        &::placeholder {
+          color: #ffffff88;
+        }
+      }
+    }
+    textarea {
+      height: 140px;
+    }
+    button {
+      margin-left: auto;
+      display: flex;
+    }
+    .contact_rrss {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      a {
+        margin-right: 40px;
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+  .our-offices {
+    min-height: 0;
+    padding: 130px 0;
+    .label {
+      margin-bottom: 40px;
+    }
+  }
+  #map {
+    margin-top: 20px;
+    img {
+      width: 100%;
+    }
+  }
+  @media (max-width: 992px) {
+    .hero {
+      padding: 0 60px;
+      flex-direction: column;
+      padding-top: 150px;
+      padding-bottom: 80px;
+      position: relative;
+      .col.rrss {
+        position: absolute;
+        bottom: 0;
+      }
+      .label.noBar {
+        padding: 0;
+        max-width: calc(100vw - 120px);
+      }
+      form {
+        padding: 30px 0;
+        max-width: calc(100vw - 120px);
+        input,
+        textarea {
+          font-size: 2.4rem;
+        }
+      }
+      &__right {
+        width: 100%;
+      }
+    }
+    .our-offices {
+      padding: 60px 60px 30px;
+    }
+  }
+  @media (max-width: 580px) {
+    .hero {
+      padding: 0 40px;
+      padding-top: 120px;
+      padding-bottom: 40px;
+      .col.rrss {
+        bottom: -20px;
+      }
+      .label.noBar {
+        max-width: calc(100vw - 80px);
+      }
+      form {
+        max-width: calc(100vw - 80px);
+      }
+    }
+    .our-offices {
+      padding: 140px 40px 30px;
+    }
+  }
+  #map iframe {
+    pointer-events: auto;
+  }
+}

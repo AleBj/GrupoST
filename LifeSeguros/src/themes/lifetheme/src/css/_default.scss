@@ -1,0 +1,65 @@
+//FONTS
+$font-title:'Andes Rounded',sans-serif;
+$font-text:'Hind',serif;
+
+//COLORS
+$aqua:#35BEBB;
+$lightblue:#7AD1EA;
+$green: #57C787;
+$lightgreen:#5DD48F;
+$lightviolet: #8D71F0;
+$violet: #7959EE;
+$blue:#2F6DFB;
+$blueDark: #2F347E;
+$orange: #FBAB48;
+$gray: #707070;
+$grey:#7A7A7A;
+
+
+$aqua50:#C5F4E1;
+$lightblue50:#EBF9FA;
+$orange50:#FEF2F0;
+$lightgreen50:#F7FCFD;
+$green50: #EFFBF8;
+$yellow50:#FCFBF6;
+$violet50:#EBE6FC;
+$pink50:#FFF6F9;
+$gray50: #F4F3F3;
+$grey50:#F4F3F3;
+
+//headings
+.h1{font-size: 7.2rem;}
+.h2Plus{font-size: 5rem;}
+.h2{font-size: 4.8rem;}
+.h3{font-size: 4rem;}
+.h4{font-size: 3.7rem;}
+h1,h2,h3,h4{font-family: $font-title;letter-spacing:-0.037em}
+
+//EASING
+$Power1EaseIn: cubic-bezier(0.550, 0.085, 0.680, 0.530);
+$Power1EaseOut: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+$Power1EaseInOut: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+
+$Power2EaseIn: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+$Power2EaseOut: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+$Power2EaseInOut: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+
+$Power3EaseIn: cubic-bezier(0.895, 0.030, 0.685, 0.220);
+$Power3EaseOut: cubic-bezier(0.165, 0.840, 0.440, 1.000);
+$Power3EaseInOut: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+
+$Power4EaseIn: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+$Power4EaseOut: cubic-bezier(0.230, 1.000, 0.320, 1.000);
+$Power4EaseInOut: cubic-bezier(0.860, 0.000, 0.070, 1.000);
+
+$CircEaseIn: cubic-bezier(0.600, 0.040, 0.980, 0.335);
+$CircEaseOut: cubic-bezier(0.075, 0.820, 0.165, 1.000);
+$CircEaseInOut: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+
+$ExpoEaseIn: cubic-bezier(0.950, 0.050, 0.795, 0.035);
+$ExpoEaseOut: cubic-bezier(0.190, 1.000, 0.220, 1.000);
+$ExpoEaseInOut: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+
+$SineEaseIn: cubic-bezier(0.470, 0.000, 0.745, 0.715);
+$SineEaseOut: cubic-bezier(0.390, 0.575, 0.565, 1.000);
+$SineEaseInOut: cubic-bezier(0.445, 0.050, 0.550, 0.950);

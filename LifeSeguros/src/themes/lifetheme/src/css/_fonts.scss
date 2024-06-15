@@ -1,0 +1,33 @@
+@font-face {
+	font-family: 'Andes Rounded';
+	font-display: swap;
+	src: url('../fonts/AndesRounded.woff2') format('woff2'), url('../fonts/AndesRounded.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Andes Rounded';
+	font-display: swap;
+	src: url('../fonts/AndesRoundedLight.woff2') format('woff2'), url('../fonts/AndesRoundedLight.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Andes Rounded';
+	font-display: swap;
+	src: url('../fonts/AndesRoundedSemiBold.woff2') format('woff2'), url('../fonts/AndesRoundedSemiBold.woff') format('woff');
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Andes Rounded';
+	font-display: swap;
+	src: url('../fonts/AndesRoundedBold.woff2') format('woff2'), url('../fonts/AndesRoundedBold.woff') format('woff');
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');

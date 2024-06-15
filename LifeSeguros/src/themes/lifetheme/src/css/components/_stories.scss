@@ -1,0 +1,192 @@
+.grid-stories {
+  width: 100%;
+  padding: 80px 0;
+  .story {
+    width: 100%;
+    position: relative;
+    display: flex;
+    &_copy {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-100%, -50%);
+      opacity: 0;
+      transition: ease-in-out 0.5s;
+      h3 {
+        margin: 6px 0;
+      }
+      span.primary-button {
+        float: right;
+        margin-right: -38px;
+      }
+    }
+    figure {
+      position: relative;
+      left: 50%;
+      width: auto;
+      .image {
+        position: relative;
+        display: block;
+        border: 1px solid transparent;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(
+          225deg,
+          rgba(17, 202, 131, 0) 51%,
+          rgba(17, 202, 131, 0) 100%
+        );
+        &:after {
+          background: linear-gradient(
+            86deg,
+            rgba(17, 202, 131, 0) 42%,
+            rgba(11, 122, 79, 0.6) 100%
+          );
+          width: 100%;
+          position: absolute;
+          top: 0;
+          right: 0;
+          height: 100%;
+          content: '';
+          background-blend-mode: overlay;
+          opacity: 0;
+          pointer-events: none;
+          transition: ease-in 0.6s;
+          transform: rotate(180deg);
+        }
+      }
+    }
+    &:hover {
+      .image {
+        box-shadow: 0px 60px 80px #00180f;
+        border-image-source: linear-gradient(
+          225deg,
+          rgba(17, 202, 131, 0) 51%,
+          rgba(17, 202, 131, 1) 100%
+        );
+        &::after {
+          opacity: 1;
+        }
+      }
+      .story_copy {
+        opacity: 1;
+        transform: translate(-80%, -50%);
+      }
+    }
+    &:nth-child(odd) {
+      .story_copy {
+        transform: translate(-20%, -50%);
+      }
+      figure .image {
+        border-image-source: linear-gradient(
+          145deg,
+          rgba(17, 202, 131, 0) 51%,
+          rgba(17, 202, 131, 0) 100%
+        );
+        transform: translateX(-100%);
+        &:after {
+          transform: rotate(0deg);
+        }
+      }
+
+      &:hover {
+        .image {
+          box-shadow: 0px 60px 80px #00180f;
+          border-image-source: linear-gradient(
+            145deg,
+            rgba(17, 202, 131, 0) 51%,
+            rgba(17, 202, 131, 1) 100%
+          );
+          &::after {
+            opacity: 1;
+          }
+        }
+        .story_copy {
+          transform: translate(-40%, -50%);
+        }
+      }
+    }
+  }
+  img.portrait {
+    max-width: 550px;
+    width: auto;
+    height: auto;
+  }
+  img.landscape {
+    max-height: 290px;
+    width: auto;
+    height: auto;
+  }
+
+  @media (max-width: 992px) {
+    img.portrait,
+    img.landscape {
+      max-width: 290px;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    .story {
+      margin: 20px;
+      figure {
+        left: 0;
+        width: 100%;
+        transform: translateX(0%);
+      }
+      .image {
+        box-shadow: 0px 60px 80px #00180f;
+        border-image-source: linear-gradient(
+          225deg,
+          rgba(17, 202, 131, 0) 51%,
+          rgba(17, 202, 131, 1) 100%
+        );
+        &::after {
+          opacity: 1;
+        }
+      }
+      .story_copy {
+        opacity: 1;
+        transform: none !important;
+        left: 20px;
+        bottom: -70px;
+        top: auto;
+        span.primary-button {
+          float: none;
+          margin-top: 20px;
+        }
+      }
+      &:nth-child(odd) {
+        .story_copy {
+          transform: none !important;
+          left: 20px;
+          bottom: -70px;
+          top: auto;
+        }
+        figure .image {
+          border-image-source: linear-gradient(
+            145deg,
+            rgba(17, 202, 131, 0) 51%,
+            rgba(17, 202, 131, 0) 100%
+          );
+          transform: translateX(0);
+          &:after {
+            transform: rotate(0deg);
+          }
+        }
+        .image {
+          box-shadow: 0px 60px 80px #00180f;
+          border-image-source: linear-gradient(
+            145deg,
+            rgba(17, 202, 131, 0) 51%,
+            rgba(17, 202, 131, 1) 100%
+          );
+          &::after {
+            opacity: 1;
+          }
+        }
+        .story_copy {
+          transform: translate(-40%, -50%);
+        }
+      }
+    }
+  }
+}

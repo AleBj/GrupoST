@@ -1,0 +1,24 @@
+.textCircle{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    transform-origin: center;
+    height: 130px;
+    width: 130px;
+    font-family: $font-title;
+    font-weight: 700;
+    color:$green;
+    pointer-events: none;
+    span{
+        text-align: center;
+        line-height: 1;
+        height: 66px;
+        position: absolute;
+        transform-origin: bottom center;
+    }
+    @media (max-width:992px) {
+        left: 200px !important;
+    }
+}
