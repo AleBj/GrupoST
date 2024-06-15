@@ -1,6 +1,9 @@
 # DS Store
 .DS_Store
 # MYSQL
-life/mysql/*
+LifeSeguros/mysql/*
+_dc.yml
+LifeSeguros/src/themes/node_modules
+node_modules
 
 *.zip
