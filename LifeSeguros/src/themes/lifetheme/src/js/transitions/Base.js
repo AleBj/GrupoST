@@ -20,9 +20,9 @@ export default class extends Highway.Transition {
 			qs('.menu'), 
 			qs('.header')],
 		{
-			duration: 2, 
+			duration: 1, 
 			alpha: 1,
-			ease: 'expo.out',
+			ease: 'PowerInOut',
 		})
 		done()
 	}
@@ -35,9 +35,9 @@ export default class extends Highway.Transition {
 			qs('.menu'), 
 			qs('.header')],
 		{
-			duration: 2, 
+			duration: .5, 
 			alpha: 0, 
-			ease: 'expo.out',
+			ease: 'PowerInOut',
 			onComplete:() => done()
 		})
 		// done()

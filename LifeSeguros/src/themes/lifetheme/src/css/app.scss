@@ -1,9 +1,11 @@
 @import 'fonts';
 @import 'default';
-@import 'menu';
-@import 'header';
-@import 'footer';
+@import './components/menu';
+@import './components/header';
+@import './components/footer';
 @import './components/titles';
+@import './components/colors';
+@import './components/primaryButton';
 //PAGES
 @import './pages/home';
 
@@ -47,6 +49,7 @@ strong{font-weight: 700;}
 a{font:inherit;text-decoration: none;color: inherit;}
 body{
     line-height: 1.6;
+    font-size: 1.6rem;
     &.is-loading{
         //cursor: wait;
     }

@@ -8,7 +8,6 @@ const { dom, bounds, device } = store
 
 import CardMobile from '../components/CardMobile'
 import Grid from '../components/Grid'
-import data from '../../../assets/data/gallery.json'
 
 export default class extends Base {
 	onEnter() {

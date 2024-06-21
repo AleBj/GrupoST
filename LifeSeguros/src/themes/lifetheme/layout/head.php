@@ -9,15 +9,14 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Title site">
 	<meta name="twitter:description" content="">
-	<meta name="twitter:image" content=".>/share-image.jpg">
+	<meta name="twitter:image" content="<?=bloginfo('template_url')?>/share-image.jpg">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="/">
 	<meta property="og:title" content="Title site">
 	<meta property="og:description" content="">
-	<meta property="og:image" content=".>/share-image.jpg">
+	<meta property="og:image" content="<?=bloginfo('template_url')?>/share-image.jpg">
 	<meta property="og:image:width" content="1200">
 	<meta property="og:image:height" content="630">
-	<link rel="apple-touch-icon" sizes="180x180" href="./assets/fav/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./favicon.ico">
-    <link rel="stylesheet" href="./dist/css/app.css?v=7">
+	<link rel="icon" type="image/png" sizes="32x32" href="<?=bloginfo('template_url')?>/favicon.ico">
+    <link rel="stylesheet" href="<?=bloginfo('template_url')?>/dist/css/app.css?v=8">
 </head>

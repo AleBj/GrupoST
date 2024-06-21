@@ -17,9 +17,6 @@ export default class extends Base {
 
 	onEnterCompleted() {
 		super.onEnterCompleted()
-
-		const mid = qs(".mid__rrss")
-		mid.style.display = "none"		
 	}
 
 	onLeaveCompleted() {

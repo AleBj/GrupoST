@@ -1,3 +1,7 @@
-.titles{
-  
-}
+//headings
+.h1{font-size: 7.2rem;}
+.h2Plus{font-size: 5rem;}
+.h2{font-size: 4.8rem;}
+.h3{font-size: 4rem;}
+.h4{font-size: 3.7rem;}
+h1,h2,h3,h4{font-family: $font-title;letter-spacing:-0.037em}

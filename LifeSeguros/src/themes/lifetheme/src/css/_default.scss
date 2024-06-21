@@ -2,39 +2,6 @@
 $font-title:'Andes Rounded',sans-serif;
 $font-text:'Hind',serif;
 
-//COLORS
-$aqua:#35BEBB;
-$lightblue:#7AD1EA;
-$green: #57C787;
-$lightgreen:#5DD48F;
-$lightviolet: #8D71F0;
-$violet: #7959EE;
-$blue:#2F6DFB;
-$blueDark: #2F347E;
-$orange: #FBAB48;
-$gray: #707070;
-$grey:#7A7A7A;
-
-
-$aqua50:#C5F4E1;
-$lightblue50:#EBF9FA;
-$orange50:#FEF2F0;
-$lightgreen50:#F7FCFD;
-$green50: #EFFBF8;
-$yellow50:#FCFBF6;
-$violet50:#EBE6FC;
-$pink50:#FFF6F9;
-$gray50: #F4F3F3;
-$grey50:#F4F3F3;
-
-//headings
-.h1{font-size: 7.2rem;}
-.h2Plus{font-size: 5rem;}
-.h2{font-size: 4.8rem;}
-.h3{font-size: 4rem;}
-.h4{font-size: 3.7rem;}
-h1,h2,h3,h4{font-family: $font-title;letter-spacing:-0.037em}
-
 //EASING
 $Power1EaseIn: cubic-bezier(0.550, 0.085, 0.680, 0.530);
 $Power1EaseOut: cubic-bezier(0.250, 0.460, 0.450, 0.940);

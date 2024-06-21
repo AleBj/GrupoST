@@ -13,6 +13,6 @@
         </section>
     </main>
 
-    <script type="text/javascript" src="./dist/js/app.js?v=1"></script>
+    <script type="text/javascript" src="<?=bloginfo('template_url')?>/dist/js/app.js?v=1"></script>
 </body>
 </html>
