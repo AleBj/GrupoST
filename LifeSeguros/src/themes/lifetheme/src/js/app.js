@@ -36,42 +36,17 @@ const H = new class extends Highway.Core {
 		super({
 			renderers: {
 				default: R.Home,
-				about: R.About,
-				detail: R.Detail,
+				//about: R.About,
+				//detail: R.Detail,
 				contact: R.Contact,
 				legals: R.Legals,
-				overview: R.Overview
+				//overview: R.Overview
 			},
 			transitions: {
 				default: T.Base,
 			},
 		})
 
-		const form = qs(".suscribe > form")
-		const suscribe = qs(".suscribe")
-		const message = document.createElement( 'p' )
-		message.className = "message"
-
-		// form.addEventListener("submit", e => {
-		// 	e.preventDefault()
-
-		// 	const emailInput = qs('input[name="email"]')
-		// 	const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
-
-		// 	if(pattern.test(emailInput.value)) {
-		// 		console.log("email matchs")
-		// 		message.innerHTML = `
-		// 			<span>EXCELENT!</span> YOU ARE SUBSCRIBED
-		// 		`
-		// 		suscribe.appendChild(message)
-		// 	} else {
-		// 		console.log("no match")
-		// 		message.innerHTML = `
-		// 			<span>!</span> THE ADDRESS MUST INCLUDE AN @. TRY AGAIN
-		// 		`
-		// 		suscribe.appendChild(message)
-		// 	}
-		// })
 	}
 
 	navigate(e) {

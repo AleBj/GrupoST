@@ -16,9 +16,7 @@ export default class extends Highway.Transition {
         document.body.style.height = ""
 		window.scrollTo(0, 0);
 		gsap.to(
-			[qs('main'), 
-			qs('.menu'), 
-			qs('.header')],
+			[qs('main')],
 		{
 			duration: 1, 
 			alpha: 1,
@@ -31,9 +29,7 @@ export default class extends Highway.Transition {
 		document.body.style.overflow = ""
         document.body.style.height = ""
 		gsap.to(
-			[qs('main'), 
-			qs('.menu'), 
-			qs('.header')],
+			[qs('main')],
 		{
 			duration: .5, 
 			alpha: 0, 

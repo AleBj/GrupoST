@@ -23,7 +23,4 @@ export default class extends Base {
 		super.onLeaveCompleted()
 	}
 
-	_DetectImageOrientation(imgs){
-		imgs.forEach(i => (i.naturalWidth > i.naturalHeight) ? i.classList.add('landscape') : i.classList.add('portrait') );
-	}
 }

@@ -1,11 +1,11 @@
 @import 'fonts';
 @import 'default';
+@import './components/titles';
+@import './components/colors';
+@import './components/primary-button';
 @import './components/menu';
 @import './components/header';
 @import './components/footer';
-@import './components/titles';
-@import './components/colors';
-@import './components/primaryButton';
 //PAGES
 @import './pages/home';
 
@@ -38,6 +38,10 @@ html, body{
     font-family: $font-text;
     margin:0;padding: 0;
 }
+body{
+    padding: 1px;
+    background-color: $lightblue50;
+}
 *{
     box-sizing: border-box;
     margin:0;
@@ -47,15 +51,19 @@ html, body{
 }
 strong{font-weight: 700;}
 a{font:inherit;text-decoration: none;color: inherit;}
-body{
+p{
+    font-size: 2.5rem;
     line-height: 1.6;
-    font-size: 1.6rem;
+    &.small{
+        font-size: 1.8rem;
+    }
+}
+body{
     &.is-loading{
         //cursor: wait;
     }
 }
 a, button{
-
     &.is-active{
         pointer-events: none;
     }

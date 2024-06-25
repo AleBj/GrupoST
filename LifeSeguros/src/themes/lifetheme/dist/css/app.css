@@ -59,19 +59,77 @@ h1, h2, h3, h4 {
 .primary-button {
   height: 73px;
   border-radius: 35px;
-  display: flex;
+  display: inline-flex;
   padding: 0 30px;
+  align-items: center;
+  gap: 16px;
 }
 .primary-button span {
   font-size: 2.4rem;
   font-weight: 500;
+  display: block;
+  line-height: 1;
+  width: 100%;
+  text-align: center;
+}
+.primary-button.small {
+  height: 55px;
+}
+.primary-button.small span {
+  font-size: 1.9rem;
 }
 .primary-button svg {
-  width: 14px;
+  width: 15px;
+}
+.primary-button.filled {
+  border: 2px solid currentColor;
+}
+.primary-button.filled.aqua {
+  color: #35BEBB;
+}
+.primary-button.filled.orange {
+  color: #FBAB48;
+}
+.primary-button.filled.green {
+  color: #57C787;
+}
+.primary-button.solid {
+  color: white;
+}
+.primary-button.solid.aqua {
+  background-color: #35BEBB;
+}
+.primary-button.solid.orange {
+  background-color: #FBAB48;
+}
+.primary-button.solid.green {
+  background-color: #57C787;
+}
+
+.menu {
+  font-size: 2rem;
+  color: #2F347E;
+}
+.menu .is-active {
+  text-decoration: underline;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  border-radius: 50px;
+  margin: 30px;
+  background-color: white;
+}
+.header .logo svg {
+  width: 230px;
+  display: block;
 }
 
 #home {
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 :root {
@@ -98,6 +156,11 @@ html, body {
   padding: 0;
 }
 
+body {
+  padding: 1px;
+  background-color: #EBF9FA;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -116,10 +179,14 @@ a {
   color: inherit;
 }
 
-body {
+p {
+  font-size: 2.5rem;
   line-height: 1.6;
-  font-size: 1.6rem;
 }
+p.small {
+  font-size: 1.8rem;
+}
+
 a.is-active, button.is-active {
   pointer-events: none;
 }

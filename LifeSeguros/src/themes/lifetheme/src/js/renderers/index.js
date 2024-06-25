@@ -9,9 +9,9 @@ import Overview from './Overview'
 export {
     Base,
     Home,
-    About,
-    Detail,
+    //About,
+    //Detail,
     Contact,
     Legals,
-    Overview
+    //Overview
 }

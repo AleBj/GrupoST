@@ -7,7 +7,6 @@
     <?php include('layout/head.php') ?>
 <body>
     <?php include('layout/header.php') ?>
-    <?php include('layout/nav.php') ?>
     <main class="main" role="main" itemscope itemprop="mainContentOfPage" data-router-wrapper>
         <section data-router-view="contact" id="contact">
         <h2 class="h2">main <strong>Contact</strong></h2>

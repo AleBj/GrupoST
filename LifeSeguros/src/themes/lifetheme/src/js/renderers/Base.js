@@ -32,6 +32,7 @@ export default class extends Highway.Renderer {
         this.handleActive()
         lenis.scrollTo(0)
         lenis.start()
+        console.log('ale11')
         //circleText(this.el)
 
         //Menu(this.el)
@@ -40,6 +41,7 @@ export default class extends Highway.Renderer {
     onEnterCompleted() {
         lenis.scrollTo(0)
         lenis.start()
+
 
         lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
             evt.emit('scroll', {
@@ -85,11 +87,11 @@ export default class extends Highway.Renderer {
         this.onEnterCompleted()
         lenis.scrollTo(0)
         lenis.start()
-        gsap.to(dom.mask, {
-            autoAlpha: 0,
-            duration: .75,
-            ease: 'power1'
-        })
+        // gsap.to(dom.mask, {
+        //     autoAlpha: 0,
+        //     duration: .75,
+        //     ease: 'power1'
+        // })
 
         evt.emit('first')
     }

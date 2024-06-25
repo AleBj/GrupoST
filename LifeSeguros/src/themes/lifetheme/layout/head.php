@@ -18,5 +18,5 @@
 	<meta property="og:image:width" content="1200">
 	<meta property="og:image:height" content="630">
 	<link rel="icon" type="image/png" sizes="32x32" href="<?=bloginfo('template_url')?>/favicon.ico">
-    <link rel="stylesheet" href="<?=bloginfo('template_url')?>/dist/css/app.css?v=8">
+    <link rel="stylesheet" href="<?=bloginfo('template_url')?>/dist/css/app.css?v=<?= date('s'); ?>">
 </head>
