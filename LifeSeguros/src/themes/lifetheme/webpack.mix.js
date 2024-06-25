@@ -15,7 +15,7 @@ mix
 	.sass('./src/css/app.scss', 'css')
 	.browserSync({
 		proxy: {
-			target: 'http://localhost:8888/_base/',
+			target: 'http://localhost:8008/',
 		},		
 		// port: 8000,
 		files: [
