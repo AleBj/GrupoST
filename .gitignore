@@ -2,7 +2,7 @@
 .DS_Store
 # MYSQL
 LifeSeguros/mysql/*
-_dc.yml
+__dc.yaml
 LifeSeguros/src/themes/node_modules
 node_modules
 
